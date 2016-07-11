@@ -1,0 +1,28 @@
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Agjensioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.pdb
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.dll
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\bin\Debug\ShtresaETeDhenave.pdb
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.dll
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\bin\Debug\BiznesLogjika.pdb
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.csprojResolveAssemblyReference.cache
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.dll
+E:\Projects\VS2015\Aplikacioni\ShtresaETeDhenave\obj\Debug\ShtresaETeDhenave.pdb

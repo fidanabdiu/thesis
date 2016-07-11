@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Aeroporti.FormaKryesore" Collapsed="true">
+    <Position X="34.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAABAAAACAAAACAMw7QAAAwHAPAQAAQAA=</HashCode>
+      <FileName>FormaKryesore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Programi" Collapsed="true">
+    <Position X="36.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Programi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.AeroplanatSipasLinjesAjrore" Collapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABgIAACAAADyAQAAAAAAACAAAQAABAA=</HashCode>
+      <FileName>Format\AeroplanatSipasLinjesAjrore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.AeroplanIRi">
+    <Position X="15" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAAAAIACAAALAAAAiAQIACAAA4AAAAAPgAAAAAQAA=</HashCode>
+      <FileName>Format\AeroplanIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Agjensionet" Collapsed="true">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQQEAAEBYCABGBgCEIDBCID+Q4AWACEAEaCCQSIAAYA=</HashCode>
+      <FileName>Format\Agjensionet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.AgjensionIRi" Collapsed="true">
+    <Position X="19.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAIACAAAAIAAQAAAAABAAAAA=</HashCode>
+      <FileName>Format\AgjensionIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Fjalekalimi" Collapsed="true">
+    <Position X="26.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAgBBAEACAAIALAAAAAkAAAAgAAQAAAAA=</HashCode>
+      <FileName>Format\Fjalekalimi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Fluturimet" Collapsed="true">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAAAAYCAQAhACAgCFCAD+Q4QAAAAAgaAAAQAAAIA=</HashCode>
+      <FileName>Format\Fluturimet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.FluturimIRi" Collapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACQAAREIAACARIICAAAQCAABAAAAAAAACAE=</HashCode>
+      <FileName>Format\FluturimIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Kerko" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAAAAACAAABAAAACAAIACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format\Kerko.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Kycja" Collapsed="true">
+    <Position X="17.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAABBAAACAAIACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format\Kycja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.LinjatAjrore" Collapsed="true">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACQgCBGOABCBGCLyR8AEABAAUaICAYBBToA=</HashCode>
+      <FileName>Format\LinjatAjrore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.LinjeERe" Collapsed="true">
+    <Position X="21.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAABAAAAGAAIACAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format\LinjeERe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.MarkeERe" Collapsed="true">
+    <Position X="28.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACIAABAAAACAAIAiAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format\MarkeERe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.PerdoruesIRi" Collapsed="true">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8wAAAJAAAHIAIFBAEACAAJAGAAAAIIAAQAAAAYgABAA=</HashCode>
+      <FileName>Format\PerdoruesIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.PerdoruesIRiAgjensionit" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9wAAAJAAAHIAIFBAAACAAJAGAAAIIIAAQEoAAYgABAA=</HashCode>
+      <FileName>Format\PerdoruesIRiAgjensionit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Perdoruesit" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABEBRAhICAIEDJCAACBiAD+QwACCMUAkQqAQUAgCIA=</HashCode>
+      <FileName>Format\Perdoruesit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Programi" Collapsed="true">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAACAAAQBAAAA=</HashCode>
+      <FileName>Format\Programi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.QytetetSipasShtetit" Collapsed="true">
+    <Position X="5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAABAAAACABAACBwAAAAAAACAAAQAAAAA=</HashCode>
+      <FileName>Format\QytetetSipasShtetit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.QytetIRi" Collapsed="true">
+    <Position X="24" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQQABEAAACAAIACAAAAIAAAAAgAAQAAQAA=</HashCode>
+      <FileName>Format\QytetIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Rezervimet" Collapsed="true">
+    <Position X="14.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAABACAAABAAAACAAAD6AwAQACAAACAAAQAIAQA=</HashCode>
+      <FileName>Format\Rezervimet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Shtetet" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABYEAGoAICQQABECgASBDACiY4BiQEABgeECASAgEAA=</HashCode>
+      <FileName>Format\Shtetet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.ShtetIRi" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAABCAAIACAAAEIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Format\ShtetIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.TipIRi" Collapsed="true">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAABAAAACAAIACAAAAQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Format\TipIRi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Format.Udhetaret" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAEAABACAAABAAAACAAAT+AwASACAAACAAAQAAAAA=</HashCode>
+      <FileName>Format\Udhetaret.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.FormatBaze.DialoguBaze" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEQQAACAAAABAAACAAAACAAAAAEAAAAAACAFAAAA=</HashCode>
+      <FileName>FormatBaze\DialoguBaze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.FormatBaze.EntitetetBaze" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEQQAACAAAABEAAGAAAACAAAAAIAAAAAABAEAAAA=</HashCode>
+      <FileName>FormatBaze\EntitetetBaze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.FormatBaze.InformataBaze" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAACAAAACAAAAAAAAAAAACAEAAAA=</HashCode>
+      <FileName>FormatBaze\InformataBaze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.FormatBaze.MesazhiBaze" Collapsed="true">
+    <Position X="31" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACIAAAAAAACAAIACAAAAAEAAAAAACABAAAA=</HashCode>
+      <FileName>FormatBaze\MesazhiBaze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.AeroplaniListe" Collapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIgAAAAAABA=</HashCode>
+      <FileName>Listat\AeroplaniListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.FluturimiListe" Collapsed="true">
+    <Position X="32.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Listat\FluturimiListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.LinjaAjroreListe" Collapsed="true">
+    <Position X="36.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Listat\LinjaAjroreListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.PerdoruesiAgjensionitListe" Collapsed="true">
+    <Position X="32.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Listat\PerdoruesiAgjensionitListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.PerdoruesiListe" Collapsed="true">
+    <Position X="34.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Listat\PerdoruesiListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.QytetiListe" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAQBA=</HashCode>
+      <FileName>Listat\QytetiListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.RezervimiListe" Collapsed="true">
+    <Position X="34.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Listat\RezervimiListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.ShtetiListe" Collapsed="true">
+    <Position X="31" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAEAAAAAAIAAAAAABA=</HashCode>
+      <FileName>Listat\ShtetiListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Listat.UdhetariListe" Collapsed="true">
+    <Position X="32.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAABA=</HashCode>
+      <FileName>Listat\UdhetariListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Properties.Resources" Collapsed="true">
+    <Position X="32.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQBAIAARAAAhAgQBEIAACSEEAAAQEEDAACAEAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Properties.Settings" Collapsed="true">
+    <Position X="36.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aeroporti.Veglat.Veglat" Collapsed="true">
+    <Position X="34.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Veglat\Veglat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Aeroporti.Veglat.LlojiMesazhit" Collapsed="true">
+    <Position X="32.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Veglat\Enumeracionet.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Aeroporti.Veglat.Butonat" Collapsed="true">
+    <Position X="31" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Veglat\Enumeracionet.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

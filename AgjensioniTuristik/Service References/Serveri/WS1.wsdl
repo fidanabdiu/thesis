@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.fidanabdiu.netfirms.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.fidanabdiu.netfirms.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.fidanabdiu.netfirms.com/">
+      <s:element name="Kycu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pseudonimi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fjalekalimi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KycuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KycuResult" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PerdoruesiAgjensionit">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Personi">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Agjensioni" type="tns:Agjensioni" />
+              <s:element minOccurs="0" maxOccurs="1" name="Pseudonimi" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fjalekalimi" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Privilegji" type="tns:Privilegji" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Personi" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mbiemri" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumriIdentifikues" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DokumentiIdentifikues" type="tns:DokumentiIdentifikues" />
+          <s:element minOccurs="1" maxOccurs="1" name="Datelindja" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vendlindja" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vendbanimi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Adresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelefoniFiks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelefoniMobil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emaili" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DokumentiIdentifikues">
+        <s:restriction base="s:string">
+          <s:enumeration value="Leternjoftim" />
+          <s:enumeration value="Patente" />
+          <s:enumeration value="Pasaporte" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="Agjensioni">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Privilegji">
+        <s:restriction base="s:string">
+          <s:enumeration value="Administrator" />
+          <s:enumeration value="Punetor" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PerdoruesiAgjensionitShkruaj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pa" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitShkruajResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionitShkruajResult" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitNdrysho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pa" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitNdryshoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionitNdryshoResult" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitLexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitLexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionitLexoResult" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitFshi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pa" type="tns:PerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitFshiResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitLexoSipasAgjensionit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgjensioniID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerdoruesiAgjensionitLexoSipasAgjensionitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionitLexoSipasAgjensionitResult" type="tns:ArrayOfPerdoruesiAgjensionit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPerdoruesiAgjensionit">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PerdoruesiAgjensionit" nillable="true" type="tns:PerdoruesiAgjensionit" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FluturimetLexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fjalakyce" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FluturimetLexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FluturimetLexoResult" type="tns:ArrayOfFluturimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFluturimi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Fluturimi" nillable="true" type="tns:Fluturimi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Fluturimi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aeroplani" type="tns:Aeroplani" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qyteti" type="tns:Qyteti" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataNisjes" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OraNisjes" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAeroportit" type="tns:PerdoruesiAeroportit" />
+          <s:element minOccurs="1" maxOccurs="1" name="FluturimiAnuluar" type="tns:FluturimiAnuluar" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cmimi" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CmimiKthyes" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Aeroplani">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LinjaAjrore" type="tns:LinjaAjrore" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipiAeroplanit" type="tns:TipiAeroplanit" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarkaAeroplanit" type="tns:MarkaAeroplanit" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumriUleseve" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LinjaAjrore">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TipiAeroplanit">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MarkaAeroplanit">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipiAeroplanit" type="tns:TipiAeroplanit" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Qyteti">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Shteti" type="tns:Shteti" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Shteti">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Emri" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PerdoruesiAeroportit">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Personi">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Pseudonimi" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fjalekalimi" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Privilegji" type="tns:Privilegji" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="FluturimiAnuluar">
+        <s:restriction base="s:string">
+          <s:enumeration value="JO" />
+          <s:enumeration value="PO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RezervimiShkruaj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="r" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Rezervimi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionit" type="tns:PerdoruesiAgjensionit" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fluturimi" type="tns:Fluturimi" />
+          <s:element minOccurs="0" maxOccurs="1" name="Udhetari" type="tns:Udhetari" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ulesja" type="tns:Ulesja" />
+          <s:element minOccurs="1" maxOccurs="1" name="LlojiRezervimit" type="tns:LlojiIRezervimit" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cmimi" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Udhetari">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Personi">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="PerdoruesiAgjensionit" type="tns:PerdoruesiAgjensionit" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Ulesja">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Numri" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aeroplani" type="tns:Aeroplani" />
+          <s:element minOccurs="1" maxOccurs="1" name="UlesjaEZene" type="tns:UlesjaEZene" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="UlesjaEZene">
+        <s:restriction base="s:string">
+          <s:enumeration value="JO" />
+          <s:enumeration value="PO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="LlojiIRezervimit">
+        <s:restriction base="s:string">
+          <s:enumeration value="NjeKahesh" />
+          <s:enumeration value="Kthyes" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RezervimiShkruajResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RezervimiShkruajResult" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiNdrysho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="r" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiNdryshoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RezervimiNdryshoResult" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiLexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiLexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RezervimiLexoResult" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiFshi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="r" type="tns:Rezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimiFshiResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RezervimetLexoSipasAgjensionit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgjensioniID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RezervimetLexoSipasAgjensionitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RezervimetLexoSipasAgjensionitResult" type="tns:ArrayOfRezervimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRezervimi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Rezervimi" nillable="true" type="tns:Rezervimi" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UdhetariShkruaj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariShkruajResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UdhetariShkruajResult" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariNdrysho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariNdryshoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UdhetariNdryshoResult" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariLexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariLexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UdhetariLexoResult" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetaretLexo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fjalakyce" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetaretLexoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UdhetaretLexoResult" type="tns:ArrayOfUdhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUdhetari">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Udhetari" nillable="true" type="tns:Udhetari" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UlesetLexoSipasAeroplanit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AeroplaniID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UlesetLexoSipasAeroplanitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UlesetLexoSipasAeroplanitResult" type="tns:ArrayOfUlesja" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUlesja">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Ulesja" nillable="true" type="tns:Ulesja" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UdhetariFshi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="tns:Udhetari" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UdhetariFshiResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UlesjaNdrysho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="tns:Ulesja" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UlesjaNdryshoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UlesjaNdryshoResult" type="tns:Ulesja" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UlesetLexoSipasStatusit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AeroplaniID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UlesjaEZene" type="tns:UlesjaEZene" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UlesetLexoSipasStatusitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UlesetLexoSipasStatusitResult" type="tns:ArrayOfUlesja" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FluturimetLexoSipasStatusit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FluturimiAnuluar" type="tns:FluturimiAnuluar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FluturimetLexoSipasStatusitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FluturimetLexoSipasStatusitResult" type="tns:ArrayOfFluturimi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LexoUlesetLira">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AeroplaniID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UlesjaEZene" type="tns:UlesjaEZene" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LexoUlesetLiraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LexoUlesetLiraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="KycuSoapIn">
+    <wsdl:part name="parameters" element="tns:Kycu" />
+  </wsdl:message>
+  <wsdl:message name="KycuSoapOut">
+    <wsdl:part name="parameters" element="tns:KycuResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitShkruajSoapIn">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitShkruaj" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitShkruajSoapOut">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitShkruajResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitNdryshoSoapIn">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitNdrysho" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitNdryshoSoapOut">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitNdryshoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitLexoSoapIn">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitLexo" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitLexoSoapOut">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitLexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitFshiSoapIn">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitFshi" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitFshiSoapOut">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitFshiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitLexoSipasAgjensionitSoapIn">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitLexoSipasAgjensionit" />
+  </wsdl:message>
+  <wsdl:message name="PerdoruesiAgjensionitLexoSipasAgjensionitSoapOut">
+    <wsdl:part name="parameters" element="tns:PerdoruesiAgjensionitLexoSipasAgjensionitResponse" />
+  </wsdl:message>
+  <wsdl:message name="FluturimetLexoSoapIn">
+    <wsdl:part name="parameters" element="tns:FluturimetLexo" />
+  </wsdl:message>
+  <wsdl:message name="FluturimetLexoSoapOut">
+    <wsdl:part name="parameters" element="tns:FluturimetLexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiShkruajSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervimiShkruaj" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiShkruajSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervimiShkruajResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiNdryshoSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervimiNdrysho" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiNdryshoSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervimiNdryshoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiLexoSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervimiLexo" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiLexoSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervimiLexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiFshiSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervimiFshi" />
+  </wsdl:message>
+  <wsdl:message name="RezervimiFshiSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervimiFshiResponse" />
+  </wsdl:message>
+  <wsdl:message name="RezervimetLexoSipasAgjensionitSoapIn">
+    <wsdl:part name="parameters" element="tns:RezervimetLexoSipasAgjensionit" />
+  </wsdl:message>
+  <wsdl:message name="RezervimetLexoSipasAgjensionitSoapOut">
+    <wsdl:part name="parameters" element="tns:RezervimetLexoSipasAgjensionitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariShkruajSoapIn">
+    <wsdl:part name="parameters" element="tns:UdhetariShkruaj" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariShkruajSoapOut">
+    <wsdl:part name="parameters" element="tns:UdhetariShkruajResponse" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariNdryshoSoapIn">
+    <wsdl:part name="parameters" element="tns:UdhetariNdrysho" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariNdryshoSoapOut">
+    <wsdl:part name="parameters" element="tns:UdhetariNdryshoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariLexoSoapIn">
+    <wsdl:part name="parameters" element="tns:UdhetariLexo" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariLexoSoapOut">
+    <wsdl:part name="parameters" element="tns:UdhetariLexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UdhetaretLexoSoapIn">
+    <wsdl:part name="parameters" element="tns:UdhetaretLexo" />
+  </wsdl:message>
+  <wsdl:message name="UdhetaretLexoSoapOut">
+    <wsdl:part name="parameters" element="tns:UdhetaretLexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UlesetLexoSipasAeroplanitSoapIn">
+    <wsdl:part name="parameters" element="tns:UlesetLexoSipasAeroplanit" />
+  </wsdl:message>
+  <wsdl:message name="UlesetLexoSipasAeroplanitSoapOut">
+    <wsdl:part name="parameters" element="tns:UlesetLexoSipasAeroplanitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariFshiSoapIn">
+    <wsdl:part name="parameters" element="tns:UdhetariFshi" />
+  </wsdl:message>
+  <wsdl:message name="UdhetariFshiSoapOut">
+    <wsdl:part name="parameters" element="tns:UdhetariFshiResponse" />
+  </wsdl:message>
+  <wsdl:message name="UlesjaNdryshoSoapIn">
+    <wsdl:part name="parameters" element="tns:UlesjaNdrysho" />
+  </wsdl:message>
+  <wsdl:message name="UlesjaNdryshoSoapOut">
+    <wsdl:part name="parameters" element="tns:UlesjaNdryshoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UlesetLexoSipasStatusitSoapIn">
+    <wsdl:part name="parameters" element="tns:UlesetLexoSipasStatusit" />
+  </wsdl:message>
+  <wsdl:message name="UlesetLexoSipasStatusitSoapOut">
+    <wsdl:part name="parameters" element="tns:UlesetLexoSipasStatusitResponse" />
+  </wsdl:message>
+  <wsdl:message name="FluturimetLexoSipasStatusitSoapIn">
+    <wsdl:part name="parameters" element="tns:FluturimetLexoSipasStatusit" />
+  </wsdl:message>
+  <wsdl:message name="FluturimetLexoSipasStatusitSoapOut">
+    <wsdl:part name="parameters" element="tns:FluturimetLexoSipasStatusitResponse" />
+  </wsdl:message>
+  <wsdl:message name="LexoUlesetLiraSoapIn">
+    <wsdl:part name="parameters" element="tns:LexoUlesetLira" />
+  </wsdl:message>
+  <wsdl:message name="LexoUlesetLiraSoapOut">
+    <wsdl:part name="parameters" element="tns:LexoUlesetLiraResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSSoap">
+    <wsdl:operation name="Kycu">
+      <wsdl:input message="tns:KycuSoapIn" />
+      <wsdl:output message="tns:KycuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitShkruaj">
+      <wsdl:input message="tns:PerdoruesiAgjensionitShkruajSoapIn" />
+      <wsdl:output message="tns:PerdoruesiAgjensionitShkruajSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitNdrysho">
+      <wsdl:input message="tns:PerdoruesiAgjensionitNdryshoSoapIn" />
+      <wsdl:output message="tns:PerdoruesiAgjensionitNdryshoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexo">
+      <wsdl:input message="tns:PerdoruesiAgjensionitLexoSoapIn" />
+      <wsdl:output message="tns:PerdoruesiAgjensionitLexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitFshi">
+      <wsdl:input message="tns:PerdoruesiAgjensionitFshiSoapIn" />
+      <wsdl:output message="tns:PerdoruesiAgjensionitFshiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexoSipasAgjensionit">
+      <wsdl:input message="tns:PerdoruesiAgjensionitLexoSipasAgjensionitSoapIn" />
+      <wsdl:output message="tns:PerdoruesiAgjensionitLexoSipasAgjensionitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexo">
+      <wsdl:input message="tns:FluturimetLexoSoapIn" />
+      <wsdl:output message="tns:FluturimetLexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiShkruaj">
+      <wsdl:input message="tns:RezervimiShkruajSoapIn" />
+      <wsdl:output message="tns:RezervimiShkruajSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiNdrysho">
+      <wsdl:input message="tns:RezervimiNdryshoSoapIn" />
+      <wsdl:output message="tns:RezervimiNdryshoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiLexo">
+      <wsdl:input message="tns:RezervimiLexoSoapIn" />
+      <wsdl:output message="tns:RezervimiLexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiFshi">
+      <wsdl:input message="tns:RezervimiFshiSoapIn" />
+      <wsdl:output message="tns:RezervimiFshiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RezervimetLexoSipasAgjensionit">
+      <wsdl:input message="tns:RezervimetLexoSipasAgjensionitSoapIn" />
+      <wsdl:output message="tns:RezervimetLexoSipasAgjensionitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariShkruaj">
+      <wsdl:input message="tns:UdhetariShkruajSoapIn" />
+      <wsdl:output message="tns:UdhetariShkruajSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariNdrysho">
+      <wsdl:input message="tns:UdhetariNdryshoSoapIn" />
+      <wsdl:output message="tns:UdhetariNdryshoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariLexo">
+      <wsdl:input message="tns:UdhetariLexoSoapIn" />
+      <wsdl:output message="tns:UdhetariLexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UdhetaretLexo">
+      <wsdl:input message="tns:UdhetaretLexoSoapIn" />
+      <wsdl:output message="tns:UdhetaretLexoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasAeroplanit">
+      <wsdl:input message="tns:UlesetLexoSipasAeroplanitSoapIn" />
+      <wsdl:output message="tns:UlesetLexoSipasAeroplanitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariFshi">
+      <wsdl:input message="tns:UdhetariFshiSoapIn" />
+      <wsdl:output message="tns:UdhetariFshiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UlesjaNdrysho">
+      <wsdl:input message="tns:UlesjaNdryshoSoapIn" />
+      <wsdl:output message="tns:UlesjaNdryshoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasStatusit">
+      <wsdl:input message="tns:UlesetLexoSipasStatusitSoapIn" />
+      <wsdl:output message="tns:UlesetLexoSipasStatusitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexoSipasStatusit">
+      <wsdl:input message="tns:FluturimetLexoSipasStatusitSoapIn" />
+      <wsdl:output message="tns:FluturimetLexoSipasStatusitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LexoUlesetLira">
+      <wsdl:input message="tns:LexoUlesetLiraSoapIn" />
+      <wsdl:output message="tns:LexoUlesetLiraSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSSoap" type="tns:WSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Kycu">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/Kycu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitShkruaj">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitShkruaj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitNdrysho">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitNdrysho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexo">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitLexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitFshi">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitFshi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexoSipasAgjensionit">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitLexoSipasAgjensionit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexo">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/FluturimetLexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiShkruaj">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiShkruaj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiNdrysho">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiNdrysho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiLexo">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiLexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiFshi">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiFshi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimetLexoSipasAgjensionit">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimetLexoSipasAgjensionit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariShkruaj">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariShkruaj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariNdrysho">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariNdrysho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariLexo">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariLexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetaretLexo">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetaretLexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasAeroplanit">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesetLexoSipasAeroplanit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariFshi">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariFshi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesjaNdrysho">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesjaNdrysho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasStatusit">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesetLexoSipasStatusit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexoSipasStatusit">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/FluturimetLexoSipasStatusit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LexoUlesetLira">
+      <soap:operation soapAction="http://www.fidanabdiu.netfirms.com/LexoUlesetLira" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSSoap12" type="tns:WSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Kycu">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/Kycu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitShkruaj">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitShkruaj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitNdrysho">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitNdrysho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexo">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitLexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitFshi">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitFshi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerdoruesiAgjensionitLexoSipasAgjensionit">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/PerdoruesiAgjensionitLexoSipasAgjensionit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexo">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/FluturimetLexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiShkruaj">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiShkruaj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiNdrysho">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiNdrysho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiLexo">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiLexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimiFshi">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimiFshi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RezervimetLexoSipasAgjensionit">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/RezervimetLexoSipasAgjensionit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariShkruaj">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariShkruaj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariNdrysho">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariNdrysho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariLexo">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariLexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetaretLexo">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetaretLexo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasAeroplanit">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesetLexoSipasAeroplanit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UdhetariFshi">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UdhetariFshi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesjaNdrysho">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesjaNdrysho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlesetLexoSipasStatusit">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/UlesetLexoSipasStatusit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FluturimetLexoSipasStatusit">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/FluturimetLexoSipasStatusit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LexoUlesetLira">
+      <soap12:operation soapAction="http://www.fidanabdiu.netfirms.com/LexoUlesetLira" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS">
+    <wsdl:port name="WSSoap" binding="tns:WSSoap">
+      <soap:address location="http://localhost:1045/WS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSSoap12" binding="tns:WSSoap12">
+      <soap12:address location="http://localhost:1045/WS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

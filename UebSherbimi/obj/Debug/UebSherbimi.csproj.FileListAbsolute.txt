@@ -1,0 +1,28 @@
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\UebSherbimi.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\UebSherbimi.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\BiznesLogjika.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\BiznesLogjika.pdb
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.dll
+C:\Documents and Settings\Fidan B. Abdiu\My Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\UebSherbimi.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\UebSherbimi.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\BiznesLogjika.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\bin\BiznesLogjika.pdb
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.dll
+C:\Users\Gezim\Documents\Visual Studio 2008\Projects\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.pdb
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\UebSherbimi.dll.config
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\UebSherbimi.dll
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\UebSherbimi.pdb
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\BiznesLogjika.dll
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.dll
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\BiznesLogjika.pdb
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\bin\ShtresaETeDhenave.pdb
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.csprojResolveAssemblyReference.cache
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.dll
+E:\Projects\VS2015\Aplikacioni\UebSherbimi\obj\Debug\UebSherbimi.pdb

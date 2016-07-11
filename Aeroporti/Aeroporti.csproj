@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF73D717-D83A-4C56-A7B8-D62069A08501}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aeroporti</RootNamespace>
+    <AssemblyName>Aeroporti</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormaKryesore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaKryesore.Designer.cs">
+      <DependentUpon>FormaKryesore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatBaze\DialoguBaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatBaze\DialoguBaze.Designer.cs">
+      <DependentUpon>DialoguBaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatBaze\EntitetetBaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatBaze\EntitetetBaze.Designer.cs">
+      <DependentUpon>EntitetetBaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatBaze\InformataBaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatBaze\InformataBaze.Designer.cs">
+      <DependentUpon>InformataBaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatBaze\MesazhiBaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatBaze\MesazhiBaze.Designer.cs">
+      <DependentUpon>MesazhiBaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\AeroplanatSipasLinjesAjrore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\AeroplanatSipasLinjesAjrore.Designer.cs">
+      <DependentUpon>AeroplanatSipasLinjesAjrore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\AeroplanIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\AeroplanIRi.Designer.cs">
+      <DependentUpon>AeroplanIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Agjensionet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Agjensionet.Designer.cs">
+      <DependentUpon>Agjensionet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\AgjensionIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\AgjensionIRi.Designer.cs">
+      <DependentUpon>AgjensionIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Fjalekalimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Fjalekalimi.Designer.cs">
+      <DependentUpon>Fjalekalimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Fluturimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Fluturimet.Designer.cs">
+      <DependentUpon>Fluturimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\FluturimIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\FluturimIRi.Designer.cs">
+      <DependentUpon>FluturimIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Kerko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Kerko.Designer.cs">
+      <DependentUpon>Kerko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Kycja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Kycja.Designer.cs">
+      <DependentUpon>Kycja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\LinjatAjrore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\LinjatAjrore.Designer.cs">
+      <DependentUpon>LinjatAjrore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\LinjeERe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\LinjeERe.Designer.cs">
+      <DependentUpon>LinjeERe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\MarkeERe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\MarkeERe.Designer.cs">
+      <DependentUpon>MarkeERe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\PerdoruesIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\PerdoruesIRi.Designer.cs">
+      <DependentUpon>PerdoruesIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\PerdoruesIRiAgjensionit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\PerdoruesIRiAgjensionit.Designer.cs">
+      <DependentUpon>PerdoruesIRiAgjensionit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Perdoruesit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Perdoruesit.Designer.cs">
+      <DependentUpon>Perdoruesit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Programi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Programi.Designer.cs">
+      <DependentUpon>Programi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\QytetetSipasShtetit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\QytetetSipasShtetit.Designer.cs">
+      <DependentUpon>QytetetSipasShtetit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\QytetIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\QytetIRi.Designer.cs">
+      <DependentUpon>QytetIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Rezervimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Rezervimet.Designer.cs">
+      <DependentUpon>Rezervimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Shtetet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Shtetet.Designer.cs">
+      <DependentUpon>Shtetet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\ShtetIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\ShtetIRi.Designer.cs">
+      <DependentUpon>ShtetIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\TipIRi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\TipIRi.Designer.cs">
+      <DependentUpon>TipIRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Format\Udhetaret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Format\Udhetaret.Designer.cs">
+      <DependentUpon>Udhetaret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listat\AeroplaniListe.cs" />
+    <Compile Include="Listat\FluturimiListe.cs" />
+    <Compile Include="Listat\LinjaAjroreListe.cs" />
+    <Compile Include="Listat\PerdoruesiAgjensionitListe.cs" />
+    <Compile Include="Listat\PerdoruesiListe.cs" />
+    <Compile Include="Listat\QytetiListe.cs" />
+    <Compile Include="Listat\RezervimiListe.cs" />
+    <Compile Include="Listat\ShtetiListe.cs">
+    </Compile>
+    <Compile Include="Listat\UdhetariListe.cs" />
+    <Compile Include="Programi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormaKryesore.resx">
+      <DependentUpon>FormaKryesore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatBaze\DialoguBaze.resx">
+      <DependentUpon>DialoguBaze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatBaze\EntitetetBaze.resx">
+      <DependentUpon>EntitetetBaze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatBaze\InformataBaze.resx">
+      <DependentUpon>InformataBaze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatBaze\MesazhiBaze.resx">
+      <DependentUpon>MesazhiBaze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\AeroplanatSipasLinjesAjrore.resx">
+      <DependentUpon>AeroplanatSipasLinjesAjrore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\AeroplanIRi.resx">
+      <DependentUpon>AeroplanIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Agjensionet.resx">
+      <DependentUpon>Agjensionet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\AgjensionIRi.resx">
+      <DependentUpon>AgjensionIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Fjalekalimi.resx">
+      <DependentUpon>Fjalekalimi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Fluturimet.resx">
+      <DependentUpon>Fluturimet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\FluturimIRi.resx">
+      <DependentUpon>FluturimIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Kerko.resx">
+      <DependentUpon>Kerko.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Kycja.resx">
+      <DependentUpon>Kycja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\LinjatAjrore.resx">
+      <DependentUpon>LinjatAjrore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\LinjeERe.resx">
+      <DependentUpon>LinjeERe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\MarkeERe.resx">
+      <DependentUpon>MarkeERe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\PerdoruesIRi.resx">
+      <DependentUpon>PerdoruesIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\PerdoruesIRiAgjensionit.resx">
+      <DependentUpon>PerdoruesIRiAgjensionit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Perdoruesit.resx">
+      <DependentUpon>Perdoruesit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Programi.resx">
+      <DependentUpon>Programi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\QytetetSipasShtetit.resx">
+      <DependentUpon>QytetetSipasShtetit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\QytetIRi.resx">
+      <DependentUpon>QytetIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Rezervimet.resx">
+      <DependentUpon>Rezervimet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Shtetet.resx">
+      <DependentUpon>Shtetet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\ShtetIRi.resx">
+      <DependentUpon>ShtetIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\TipIRi.resx">
+      <DependentUpon>TipIRi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Format\Udhetaret.resx">
+      <DependentUpon>Udhetaret.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Veglat\Enumeracionet.cs" />
+    <Compile Include="Veglat\Veglat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BiznesLogjika\BiznesLogjika.csproj">
+      <Project>{C1DC8852-69E0-40FA-8745-9DE330F8DF91}</Project>
+      <Name>BiznesLogjika</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShtresaETeDhenave\ShtresaETeDhenave.csproj">
+      <Project>{CCA42E21-F8EE-4D96-8E18-7DDBC0D0FD50}</Project>
+      <Name>ShtresaETeDhenave</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llogoja e universitetit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dialog48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dil24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fjalekalimi48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shto24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ndrysho24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fshi24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filtro24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fresko24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listimi24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fjalekalimi24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MbiProgramin24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MbiProgramin48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perdoruesit48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shtetet48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fluturimet48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rezervimet48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Udhetaret48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agjensionet48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinjatAjrore48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrami.cd" />
+    <None Include="Resources\Dil48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
