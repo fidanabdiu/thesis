@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using BiznesLogjika;
 
 namespace Aeroporti.Format
 {
-    public partial class ShtetIRi : Aeroporti.FormatBaze.DialoguBaze
+    public partial class ShtetIRi : FormatBaze.DialoguBaze
     {
         private Shteti aShteti;
         

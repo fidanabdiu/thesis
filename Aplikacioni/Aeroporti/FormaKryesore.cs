@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using BiznesLogjika;
 using ShtresaETeDhenave;
@@ -64,7 +58,7 @@ namespace Aeroporti
                 PerdoruesiAeroportitDB padb = new PerdoruesiAeroportitDB(Veglat.Veglat.PerdoruesiIKycur);
                 padb.Ndrysho();
 
-                MesazhiBaze mesazhi = new MesazhiBaze(Aeroporti.Veglat.LlojiMesazhit.Informacion, "Fjalëkalimi juaj u ndërrua me sukses", Aeroporti.Veglat.Butonat.Dil);
+                MesazhiBaze mesazhi = new MesazhiBaze(Veglat.LlojiMesazhit.Informacion, "Fjalëkalimi juaj u ndërrua me sukses", Veglat.Butonat.Dil);
                 mesazhi.ShowDialog();
             }
         }

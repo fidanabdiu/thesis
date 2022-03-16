@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using AgjensioniTuristik.Serveri;
 using AgjensioniTuristik.Listat;
@@ -13,7 +7,7 @@ using AgjensioniTuristik.Veglat;
 
 namespace AgjensioniTuristik.Format
 {
-    public partial class Fluturimet : FormatBaze.EntitetetBaze
+    public partial class Fluturimet : EntitetetBaze
     {
         private static Fluturimet instanca = null;
         

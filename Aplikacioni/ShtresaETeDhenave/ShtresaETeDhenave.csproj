@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ShtresaETeDhenave</RootNamespace>
     <AssemblyName>ShtresaETeDhenave</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -85,13 +85,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BiznesLogjika\BiznesLogjika.csproj">
-      <Project>{C1DC8852-69E0-40FA-8745-9DE330F8DF91}</Project>
-      <Name>BiznesLogjika</Name>
-    </ProjectReference>
+    <None Include="Diagrami.cd" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Diagrami.cd" />
+    <Content Include="script.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BiznesLogjika\BiznesLogjika.csproj">
+      <Project>{c1dc8852-69e0-40fa-8745-9de330f8df91}</Project>
+      <Name>BiznesLogjika</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

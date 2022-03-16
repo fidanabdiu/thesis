@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace AgjensioniTuristik.Veglat
+﻿namespace AgjensioniTuristik.Veglat
 {
     public class MetodaToString
     {

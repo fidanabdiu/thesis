@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using BiznesLogjika;
 using ShtresaETeDhenave;
 
 namespace Aeroporti.Format
 {
-    public partial class QytetIRi : Aeroporti.FormatBaze.DialoguBaze
+    public partial class QytetIRi : FormatBaze.DialoguBaze
     {
         private Qyteti aQyteti;
         

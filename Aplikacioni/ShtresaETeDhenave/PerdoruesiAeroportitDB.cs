@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using BiznesLogjika;
 using System.Data.SqlClient;
 using System.Data;
-using System.Drawing;
 
 namespace ShtresaETeDhenave
 {

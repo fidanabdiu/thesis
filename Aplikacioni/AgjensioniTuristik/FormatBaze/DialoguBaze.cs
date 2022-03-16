@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace AgjensioniTuristik.FormatBaze
 {
@@ -18,7 +11,7 @@ namespace AgjensioniTuristik.FormatBaze
 
         protected void Mesazhi(string mesazhi)
         {
-            MesazhiBaze forma = new MesazhiBaze(AgjensioniTuristik.Veglat.LlojiMesazhit.Verejtje, mesazhi, AgjensioniTuristik.Veglat.Butonat.Dil);
+            MesazhiBaze forma = new MesazhiBaze(Veglat.LlojiMesazhit.Verejtje, mesazhi, Veglat.Butonat.Dil);
             forma.ShowDialog();
         }
     }

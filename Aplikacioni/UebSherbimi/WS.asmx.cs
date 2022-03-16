@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Data;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel;
 using System.Web.Services;
-using System.Web.Services.Protocols;
-using System.Xml.Linq;
 using BiznesLogjika;
 using System.Collections.Generic;
 using ShtresaETeDhenave;
@@ -21,7 +14,7 @@ namespace UebSherbimi
     [ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
-    public class WS : System.Web.Services.WebService
+    public class WS : WebService
     {
         [WebMethod]
         public PerdoruesiAgjensionit Kycu(string pseudonimi, string fjalekalimi)
